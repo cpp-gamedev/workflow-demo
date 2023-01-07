@@ -5,7 +5,7 @@
 #include <vector>
 
 namespace {
-void run(std::span<std::string_view const> args) {
+void run([[maybe_unused]] std::span<std::string_view const> args) {
 	auto window = sf::RenderWindow{
 		sf::VideoMode{1280, 720},
 		"Hello Window",
